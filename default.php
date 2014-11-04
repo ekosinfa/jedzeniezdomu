@@ -10,7 +10,7 @@ echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
 $result = mysqli_query($con,"SELECT * FROM menu ");
-echo ' trakakak'
+echo ' trakakak';
 /*echo "<table border='1'>
 <tr>
 <th>Nazwa</th>
