@@ -12,15 +12,15 @@ $result = mysqli_query($con,"SELECT * FROM menu WHERE type ='pizza'");
 
 echo "<table border='1'>
 <tr>
-<th>Firstname</th>
-<th>Lastname</th>
+<th>nazwa</th>
+<th>cena</th>
 </tr>";
 
 while($row = mysqli_fetch_array($result))
 {
 echo "<tr>";
-echo "<td>" . $row['FirstName'] . "</td>";
-echo "<td>" . $row['LastName'] . "</td>";
+echo "<td>" . $row['name'] . "</td>";
+echo "<td>" . $row['price'] . "</td>";
 echo "</tr>";
 }
 echo "</table>";
