@@ -15,6 +15,7 @@ echo "<table border='1'>
 <th>nazwa</th>
 <th>opis</th>
 <th>cena</th>
+<th>zaznacz tu!</th>
 </tr>";
 
 while($row = mysqli_fetch_array($result))
@@ -23,6 +24,7 @@ echo "<tr>";
 echo "<td>" . $row['name'] . "</td>";
 echo "<td>" . $row['description'] . "</td>";
 echo "<td>" . $row['cost'] . "</td>";
+echo "<td><input type="checkbox" name=".$row['name']." value=".$row['name'].">"
 echo "</tr>";
 }
 echo "</table>";
