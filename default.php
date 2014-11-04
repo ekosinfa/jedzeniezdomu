@@ -1,6 +1,6 @@
 
 <?php
-echo "<h3><font  face="Verdana">Zamów obiad przez internet!</font><h3>";
+//echo "<h3><font  face="Verdana">Zamów obiad przez internet!</font><h3>";
 
 $con=mysqli_connect("localhost","michal","michalxsw21qaz","ekosinfa_michal");
 // Check connection
@@ -11,7 +11,7 @@ echo "Failed to connect to MySQL: " . mysqli_connect_error();
 
 $result = mysqli_query($con,"SELECT * FROM menu ");
 echo ' trakakak';
-/*echo "<table border='1'>
+echo "<table border='1'>
 <tr>
 <th>Nazwa</th>
 <th>Opis</th>
