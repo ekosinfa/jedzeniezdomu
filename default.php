@@ -20,11 +20,11 @@ echo "<table border='1'>
 
 while($row = mysqli_fetch_array($result))
 {
-echo "<tr>";
+/*echo "<tr>";
 echo "<td>" . $row['name'] . "</td>";
 echo "<td>" . $row['cost'] . "</td>";
 echo "<td>" . $row['description'] . "</td>";
-echo "</tr>";
+echo "</tr>";*/
 }
 echo "</table>";
 
