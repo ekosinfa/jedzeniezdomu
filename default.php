@@ -10,8 +10,8 @@ echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
 $result = mysqli_query($con,"SELECT * FROM menu ");
-
-echo "<table border='1'>
+echo ' trakakak'
+/*echo "<table border='1'>
 <tr>
 <th>Nazwa</th>
 <th>Opis</th>
@@ -20,7 +20,7 @@ echo "<table border='1'>
 
 while($row = mysqli_fetch_array($result))
 {
-/*echo "<tr>";
+echo "<tr>";
 echo "<td>" . $row['name'] . "</td>";
 echo "<td>" . $row['cost'] . "</td>";
 echo "<td>" . $row['description'] . "</td>";
