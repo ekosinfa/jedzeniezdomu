@@ -6,7 +6,7 @@ if (mysqli_connect_errno())
 {
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
-$result = mysqli_query($con,"SELECT name, cost, description FROM menu WHERE type="pizza");
+$result = mysqli_query($con,"SELECT name, cost, description FROM menu WHERE type='pizza');
 echo "<table border='1'>
 <tr>
 <th>Nazwa</th>
