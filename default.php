@@ -13,8 +13,8 @@ $result = mysqli_query($con,"SELECT * FROM menu WHERE type ='pizza'");
 echo "<table border='1'>
 <tr>
 <th>nazwa</th>
-<th>cena</th>
 <th>opis</th>
+<th>cena</th>
 </tr>";
 
 while($row = mysqli_fetch_array($result))
