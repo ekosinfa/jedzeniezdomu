@@ -1,5 +1,5 @@
 <?php
-echo "<h3><font  face="Verdana">Zamów obiad przez internet!</font><h3>";
+echo '<h3><font  face="Verdana">Zamów obiad przez internet!</font><h3>';
 $con=mysqli_connect("localhost","michal","michalxsw21qaz","ekosinfa_michal");
 // Check connection
 if (mysqli_connect_errno())
