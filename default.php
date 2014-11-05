@@ -25,7 +25,7 @@ echo "<tr>";
 echo "<td>" . $row['name'] . "</td>";
 echo "<td>" . $row['description'] . "</td>";
 echo "<td>" . $row['cost'] . " zl </td>";
-echo "<td> <input type='checkbox' ></td>
+echo "<td> <input type='checkbox' ></td>";
 
 echo "</tr>";
 }
