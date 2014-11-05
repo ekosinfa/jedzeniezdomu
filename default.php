@@ -1,5 +1,6 @@
 <?php
 echo '<h3><font  face="Verdana">Zamawiaj obiad przez internet!</font><h3>';
+echo '<form>';
 
 $con=mysqli_connect("localhost","michal","michalxsw21qaz","ekosinfa_michal");
 // Check connection
@@ -15,6 +16,7 @@ echo "<table border='1'>
 <th>nazwa</th>
 <th>opis</th>
 <th>cena</th>
+<th>zaznacz tu!</th>
 </tr>";
 
 while($row = mysqli_fetch_array($result))
@@ -23,11 +25,13 @@ echo "<tr>";
 echo "<td>" . $row['name'] . "</td>";
 echo "<td>" . $row['description'] . "</td>";
 echo "<td>" . $row['cost'] . " zl </td>";
+echo "<td> <input type='checkbox' name='".$row_['name']"'value='".$row_['name']"' /></td>";
 
 echo "</tr>";
 }
 echo "</table>";
 
+echo "</form>";
+
 mysqli_close($con);
 ?>
-
