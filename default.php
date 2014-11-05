@@ -15,7 +15,6 @@ echo "<table border='1'>
 <th>nazwa</th>
 <th>opis</th>
 <th>cena</th>
-<th>zaznacz tu!</th>
 </tr>";
 
 while($row = mysqli_fetch_array($result))
