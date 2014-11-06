@@ -8,7 +8,9 @@ if (mysqli_connect_errno())
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 /-----
-function DownloadAndDisplay($co){$result = mysqli_query($con,"SELECT name, cost, description FROM ".$co."");
+function DownloadAndDisplay($co){$result = mysqli_query($con,"SELECT name, cost, description FROM ".$co.""
+
+);
 
 echo "<table border='1'>
 <tr>
