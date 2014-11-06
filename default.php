@@ -7,11 +7,7 @@ if (mysqli_connect_errno())
 {
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
-/-----
-function DownloadAndDisplay($co){$result = mysqli_query($con,"SELECT name, cost, description FROM ".$co.""
-
-);
-
+$result = mysqli_query($con,"SELECT * FROM menu WHERE type ='pizza'");
 echo "<table border='1'>
 <tr>
 <th>nazwa</th>
@@ -19,7 +15,6 @@ echo "<table border='1'>
 <th>cena</th>
 <th>zaznacz tu!</th>
 </tr>";
-
 while($row = mysqli_fetch_array($result))
 {
 echo "<tr>";
@@ -27,16 +22,9 @@ echo "<td>" . $row['name'] . "</td>";
 echo "<td>" . $row['description'] . "</td>";
 echo "<td>" . $row['cost'] . " zl </td>";
 echo "<td> <input type='checkbox' name='".$row['name']."' value='".$row['name']."'></td>";
-
 echo "</tr>";
 }
 echo "</table>";
-
-}
-/---
-DownloadAndDisplay('pizza');
 echo "</form>";
-
-
 mysqli_close($con);
 ?>
