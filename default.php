@@ -1,13 +1,6 @@
 <?php
-echo '<h3><font  face="Verdana">Zamawiaj obiad przez internet!</font><h3>';
-echo '<form>';
-$con=mysqli_connect("localhost","michal","michalxsw21qaz","ekosinfa_michal");
-// Check connection
-if (mysqli_connect_errno())
-{
-echo "Failed to connect to MySQL: " . mysqli_connect_error();
-}
-$result = mysqli_query($con,"SELECT * FROM pizza");
+function DownLoadAndDisplay($co){
+  $result = mysqli_query($con,"SELECT * FROM ".$co."");
 echo "<table border='1'>
 <tr>
 <th>nazwa</th>
@@ -25,6 +18,16 @@ echo "<td> <input type='checkbox' name='".$row['name']."' value='".$row['name'].
 echo "</tr>";
 }
 echo "</table>";
+}
+echo '<h3><font  face="Verdana">Zamawiaj obiad przez internet!</font><h3>';
+echo '<form>';
+$con=mysqli_connect("localhost","michal","michalxsw21qaz","ekosinfa_michal");
+// Check connection
+if (mysqli_connect_errno())
+{
+echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+
 echo "</form>";
 mysqli_close($con);
 ?>
