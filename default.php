@@ -1,5 +1,5 @@
 <?php
-function DownLoadAndDisplay($co){
+function DownloadAndDisplay($co){
   $result = mysqli_query($con,"SELECT * FROM ".$co."");
 echo "<table border='1'>
 <tr>
@@ -27,7 +27,7 @@ if (mysqli_connect_errno())
 {
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
-
+DownloadAndDisplay("pizza")
 echo "</form>";
 mysqli_close($con);
 ?>
