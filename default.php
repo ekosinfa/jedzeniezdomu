@@ -1,6 +1,6 @@
 <?php
 function DownloadAndDisplay($co){
-  $result = mysqli_query($con,"SELECT * FROM ".$co."");
+  $result = mysqli_query($con,"SELECT * FROM '".$co."'");
 echo "<table border='1'>
 <tr>
 <th>nazwa</th>
