@@ -1,6 +1,6 @@
 <?php
 function DownloadAndDisplay($co){
-  $query="SELECT * FROM".$co."";
+  $query="SELECT * FROM ".$co."";
   $result = mysqli_query($con,$query);
   
 echo "<table border='1'>
