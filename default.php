@@ -1,7 +1,9 @@
 <?php
 error_reporting(E_ALL);
 function DownloadAndDisplay($co){
-  $query="SELECT * FROM ".$co."";
+$con=mysqli_connect("localhost","michal","michalxsw21qaz","ekosinfa_michal");  
+$query="SELECT * FROM ".$co."";
+
   $result = mysqli_query($con,$query);
   
 echo "<table border='1'>
@@ -24,7 +26,7 @@ echo "</table>";
 }
 echo '<h3><font  face="Verdana">Zamawiaj obiad przez internet!</font><h3>';
 echo '<form>';
-$con=mysqli_connect("localhost","michal","michalxsw21qaz","ekosinfa_michal");
+
 // Check connection
 if (mysqli_connect_errno())
 {
