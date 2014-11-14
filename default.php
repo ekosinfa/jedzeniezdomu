@@ -1,4 +1,5 @@
 <?php
+display_errors(E_ALL);
 function DownloadAndDisplay($co){
   $query="SELECT * FROM ".$co."";
   $result = mysqli_query($con,$query);
