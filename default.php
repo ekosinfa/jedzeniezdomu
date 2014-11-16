@@ -22,6 +22,7 @@ echo "<td>" . $row['cost'] . " zl </td>";
 echo "<td> <input type='checkbox' name='".$row['name']."' value='".$row['name']."'></td>";
 echo "</tr>";
 }
+mysqli_close($con);
 echo "</table>";
 }
 echo '<h3><font  face="Verdana">Zamawiaj obiad przez internet!</font><h3>';
@@ -34,5 +35,5 @@ echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 DownloadAndDisplay("pizza");
 echo "</form>";
-mysqli_close($con);
+
 ?>
