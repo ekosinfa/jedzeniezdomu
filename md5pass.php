@@ -1,2 +1,2 @@
 <?php
-$_POST['pass']=$pass;
+$_POST["pass"]=$pass;
