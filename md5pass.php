@@ -1,4 +1,4 @@
 <?php
-$pass;
-$_POST["pass"]=$pass;
-echo md5($pass);
+$passw;
+$_POST["pass"]=$passw;
+echo md5($passw);
