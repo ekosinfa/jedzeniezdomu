@@ -26,7 +26,7 @@ mysqli_close($con);
 echo "</table>";
 }
 echo '<h3><font  face="Verdana">Zamawiaj obiad przez internet!</font><h3>';
-echo '<form>';
+echo '<form method="post" action="sendorder.php">';
 
 // Check connection
 if (mysqli_connect_errno())
