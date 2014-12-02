@@ -5,7 +5,7 @@
   $result = mysqli_query($con,$query);
 
   while($row = mysqli_fetch_array($result)){
-    if(isset[$row['name']])
+    if(isset($_POST[$row['name']]))
       echo $row['name']."<br>";
     
   }
