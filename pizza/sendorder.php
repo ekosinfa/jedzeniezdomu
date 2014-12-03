@@ -24,7 +24,7 @@ echo "Dzieki za zamowienie , zamowiles : <br>";
      
       
     
-  }
+  
 
 echo "Przynies ". $cena." zl do sekretariatu aby zrealizowac zamowienie";
 ?>
