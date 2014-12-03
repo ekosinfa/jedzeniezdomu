@@ -24,7 +24,7 @@ echo "</tr>";
 }
 mysqli_close($con);
 echo "</table>";
-echo 'Powyższe pizze zamawiam na :<br>';
+echo 'Powyzsze pizze zamawiam na :<br>';
 echo '<input type="radio" name="cienkieciasto">Cienkim ciescie';
 echo '<input type="radio" name="cienkieciasto">Grubym ciescie';
 
