@@ -24,6 +24,10 @@ echo "</tr>";
 }
 mysqli_close($con);
 echo "</table>";
+echo 'Powyższe pizze zamawiam na :<br>';
+echo '<input type="radio" name="cienkieciasto">Cienkim ciescie';
+echo '<input type="radio" name="cienkieciasto">Grubym ciescie';
+
 }
 echo '<h3><font  face="Verdana">Zamawiaj obiad przez internet!</font><h3>';
 echo '<form method="post" action="sendorder.php">';
@@ -34,6 +38,7 @@ if (mysqli_connect_errno())
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 DownloadAndDisplay("pizza");
+
 echo '<br><input type="text" value="wpisz tu swoje nazwisko" name="nazwisko">';
 echo '<input type="submit" value="ok">';
 echo "</form>";
