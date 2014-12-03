@@ -18,6 +18,6 @@ echo "Dzieki za zamowienie , zamowiles : <br>";
     
   }
 
-echo "Przynies". $cena." zl do sekretariatu";
+echo "Przynies ". $cena." zl do sekretariatu aby zrealizować zamówienie";
 ?>
 
