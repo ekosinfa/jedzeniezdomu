@@ -12,5 +12,5 @@
       
     
   }
-echo 
+echo $cena;
 ?>
