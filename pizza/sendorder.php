@@ -11,7 +11,7 @@
       echo $row['name']."<br>";
       $cena=$cena + $row['cost'];
       $zapisz="INSERT INTO orders (order,cena) VALUES ('".$row['name']."','".$row['cost']."')";
-      $query1=mysqli_query($con,$zapisz);
+      $query1=mysqli_query($con,$zapisz) or die(mysqli_error($con));
 }
      
       
