@@ -10,7 +10,7 @@
       
       echo $row['name']."<br>";
       $cena=$cena + $row['cost'];
-      $zapisz="INSERT INTO orders (order,cena,name) VALUES (".$row['name'].",".$row['cena'].",".'anon')";
+      $zapisz="INSERT INTO orders (order,cena) VALUES (".$row['name'].",".$row['cena'].')'";
       
 }
      
