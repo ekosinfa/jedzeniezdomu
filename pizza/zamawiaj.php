@@ -34,6 +34,7 @@ if (mysqli_connect_errno())
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 DownloadAndDisplay("pizza");
+echo '<input type="text" value="wpisz tu swoje nazwisko" name="nazwisko">
 echo '<input type="submit" value="ok">';
 echo "</form>";
 
