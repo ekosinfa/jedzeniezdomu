@@ -10,7 +10,8 @@ echo "Dzieki za zamowienie , zamowiles : <br>";
       $pizza="";
           if($_POST['cienkieciasto']=="cienkieciasto"){
           $pizza=$row['name'].'(cienkie ciasto)';
-          }else{
+          }
+          if($_POST['grubeciasto']=="grubeciasto")
           $pizza=$row['name'].'(grube ciasto)';
           }
       echo "- "  .$pizza."<br>";
