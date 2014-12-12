@@ -6,12 +6,6 @@
   $result = mysqli_query($con,$query);
 echo "Dzieki za zamowienie , zamowiles : <br>";
   while($row = mysqli_fetch_array($result)){
-   $pizza="";
-    if(isset($_POST['cienkieciasto'])){
-      $pizza=$row['name']." (cienkie ciasto)";
-   } else{
-      $pizza=$row['name']." (grube ciasto)";}
-      
     if(isset($_POST[$row['name']])){
       
       echo "- "  .$pizza."<br>";
