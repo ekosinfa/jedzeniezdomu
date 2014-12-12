@@ -29,7 +29,7 @@ echo '<input type="radio" name="ciasto" value="cienkieciasto" checked>Cienkim ci
 echo '<input type="radio" name="ciasto" value="grubeciasto">Grubym ciescie';
 
 }
-echo '<h3><font  face="Verdana">Zamawiaj obiad przez internet!</font><h3>';
+echo '<h3><font  face="Verdana">Zamawiaj obiadeczuniek przez internet!</font><h3>';
 echo '<form method="post" action="sendorder.php">';
 
 // Check connection
