@@ -7,7 +7,12 @@
 echo "Dzieki za zamowienie , zamowiles : <br>";
   while($row = mysqli_fetch_array($result)){
     if(isset($_POST[$row['name']])){
-      
+      $pizza="";
+          if($_POST[cienkieciasto]=1){
+          $pizza=$row['name'].'(cienkie ciasto';
+          }else{
+          $pizza=$row['name'].'(grube ciasto';
+          }
       echo "- "  .$row['name']."<br>";
       $cena=$cena + $row['cost'];
       $zapisz="INSERT INTO orders ( name,zamowienie,  cena ) VALUES ('".$_POST['nazwisko']."', '".$pizza."', '".$row['cost']."' );";
