@@ -29,7 +29,7 @@ echo '<input type="radio" name="ciasto" value="cienkieciasto" checked>Cienkim ci
 echo '<input type="radio" name="ciasto" value="grubeciasto">Grubym ciescie';
 
 }
-echo '<h3><font  face="Verdana">Zamawiaj obiadeczuniek przez internet!</font><h3>';
+echo '<h3><font  face="Verdana">Zamawiaj obiad przez internet!</font><h3>';
 echo '<form method="post" action="sendorder.php">';
 
 // Check connection
@@ -39,7 +39,7 @@ echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 DownloadAndDisplay("pizza");
 
-echo '<br><input type="text" value="wpisz tu swoje nazwisko" name="nazwisko">';
+echo '<br><input type="text"  placeholder="wpisz tu swe imie i nazwisko" name="nazwisko">';
 echo '<input type="submit" value="ok">';
 echo "</form>";
 
