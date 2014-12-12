@@ -1,5 +1,6 @@
 <?php
 //KONEKSZYNY VARIABELSY I INNE 
+  $check=0;
   $cena=0;
   $con=mysqli_connect("localhost","michal","michalxsw21qaz","ekosinfa_michal");  
   $query="SELECT * FROM pizza";
@@ -7,6 +8,7 @@
 echo "Dzieki za zamowienie , zamowiles : <br>";
   while($row = mysqli_fetch_array($result)){
     if(isset($_POST[$row['name']])){
+      $check++;
       $pizza="";
           if($_POST['ciasto']=="cienkieciasto"){
           $pizza=$row['name'].'(cienkie ciasto)';
@@ -16,8 +18,13 @@ echo "Dzieki za zamowienie , zamowiles : <br>";
           }
       echo "- "  .$pizza."<br>";
       $cena=$cena + $row['cost'];
+      if(!$check==0){
       $zapisz="INSERT INTO orders ( name,zamowienie,  cena ) VALUES ('".$_POST['nazwisko']."', '".$pizza."', '".$row['cost']."' );";
       $query1=mysqli_query($con,$zapisz) or die(mysqli_error($con));
+        
+      }else{
+        end("nie zamawiasz nic , nie jestes glodny?")
+      }
     
     }
 }
