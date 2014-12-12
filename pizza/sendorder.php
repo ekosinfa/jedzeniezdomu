@@ -8,9 +8,9 @@ echo "Dzieki za zamowienie , zamowiles : <br>";
   while($row = mysqli_fetch_array($result)){
    $pizza="";
     if(isset($_POST['cienkieciasto'])){
-      $pizza=$_POST['name']." (cienkie ciasto)";
+      $pizza=$_POST[$row['name']]." (cienkie ciasto)";
    } else{
-      $pizza=$_POST['name']." (grube ciasto)";}
+      $pizza=$_POST[$row['name']]." (grube ciasto)";}
       
     if(isset($_POST[$row['name']])){
       
