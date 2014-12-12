@@ -9,9 +9,9 @@ echo "Dzieki za zamowienie , zamowiles : <br>";
     if(isset($_POST[$row['name']])){
       $pizza="";
           if($_POST['cienkieciasto']=1){
-          $pizza=$row['name'].'(cienkie ciasto';
+          $pizza=$row['name'].'(cienkie ciasto)';
           }else{
-          $pizza=$row['name'].'(grube ciasto';
+          $pizza=$row['name'].'(grube ciasto)';
           }
       echo "- "  .$pizza."<br>";
       $cena=$cena + $row['cost'];
