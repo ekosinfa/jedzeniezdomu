@@ -23,7 +23,7 @@ echo "Dzieki za zamowienie , zamowiles : <br>";
       $query1=mysqli_query($con,$zapisz) or die(mysqli_error($con));
         
       }else{
-        end("nie zamawiasz nic , nie jestes glodny?")
+        exit("nie zamawiasz nic , nie jestes glodny?")
       }
     
     }
