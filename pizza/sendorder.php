@@ -11,7 +11,7 @@ echo "Dzieki za zamowienie , zamowiles : <br>";
           if($_POST['cienkieciasto']=="cienkieciasto"){
           $pizza=$row['name'].'(cienkie ciasto)';
           }
-          if($_POST['grubeciasto']=="grubeciasto")
+          if($_POST['grubeciasto']=="grubeciasto"){
           $pizza=$row['name'].'(grube ciasto)';
           }
       echo "- "  .$pizza."<br>";
