@@ -8,10 +8,10 @@ echo "Dzieki za zamowienie , zamowiles : <br>";
   while($row = mysqli_fetch_array($result)){
     if(isset($_POST[$row['name']])){
       $pizza="";
-          if($_POST['cienkieciasto']=="cienkieciasto"){
+          if($_POST['ciasto']=="cienkieciasto"){
           $pizza=$row['name'].'(cienkie ciasto)';
           }
-          if($_POST['grubeciasto']=="grubeciasto"){
+          if($_POST['ciasto']=="grubeciasto"){
           $pizza=$row['name'].'(grube ciasto)';
           }
       echo "- "  .$pizza."<br>";
