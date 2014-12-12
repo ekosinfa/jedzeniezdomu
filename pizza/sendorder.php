@@ -25,7 +25,7 @@ echo "Dzieki za zamowienie , zamowiles : <br>";
       
     
     }
-}
+}}
      
    if($check==0){
      exit("Nic nie zamowiles :(");
