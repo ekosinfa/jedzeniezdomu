@@ -18,18 +18,18 @@ echo "Dzieki za zamowienie , zamowiles : <br>";
           }
       echo "- "  .$pizza."<br>";
       $cena=$cena + $row['cost'];
-      if(!$check==0){
+      
       $zapisz="INSERT INTO orders ( name,zamowienie,  cena ) VALUES ('".$_POST['nazwisko']."', '".$pizza."', '".$row['cost']."' );";
       $query1=mysqli_query($con,$zapisz) or die(mysqli_error($con));
         
-      }else{
-        exit("nie zamawiasz nic , nie jestes glodny?")
-      }
+      
     
     }
 }
      
-      
+   if($check==0){
+     exit("Nic nie zamowiles :(")
+   }   
     
   
 
