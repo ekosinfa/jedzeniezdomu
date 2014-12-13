@@ -1,5 +1,9 @@
 <?php
 //KONEKSZYNY VARIABELSY I INNE 
+if(!isset($_POST['nazwikso'])){
+  exit ('Niestety , nie przyjmujemy zamowien od anonimow,wpisz swe imie i nazwisko na dole');
+  
+}
   $check=0;
   $cena=0;
   $con=mysqli_connect("localhost","michal","michalxsw21qaz","ekosinfa_michal");  
