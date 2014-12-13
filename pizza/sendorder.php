@@ -19,7 +19,7 @@ echo "Dzieki za zamowienie , zamowiles : <br>";
       echo "- "  .$pizza."<br>";
       $cena=$cena + $row['cost'];
       
-      $zapisz="INSERT INTO orders ( name,zamowienie,  cena ) VALUES ('".$_POST['nazwisko']."', '".$pizza."', '".$row['cost']."' );";
+      $zapisz="INSERT INTO orders ( name,zamowienie,  cena, confirmation ) VALUES ('".$_POST['nazwisko']."', '".$pizza."', '".$row['cost']."',0 );";
       $query1=mysqli_query($con,$zapisz) or die(mysqli_error($con));
         
       
