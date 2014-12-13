@@ -1,6 +1,6 @@
 <?php
 //KONEKSZYNY VARIABELSY I INNE 
-if(!isset($_POST['nazwikso'])){
+if(!isset($_POST['nazwisko'])){
   exit ('Niestety , nie przyjmujemy zamowien od anonimow,wpisz swe imie i nazwisko na dole');
   
 }
