@@ -1,7 +1,7 @@
 <?php
 //KONEKSZYNY VARIABELSY I INNE 
 $nazwisko=$_POST['nazwisko'];
-if(!isset($nazwisko||$nazwisko=='') ){
+if(null==$nazwisko||$nazwisko=='') ){
   exit ('Niestety , nie przyjmujemy zamowien od anonimow,wpisz swe imie i nazwisko na dole');
   
 }
