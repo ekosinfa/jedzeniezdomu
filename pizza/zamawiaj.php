@@ -15,6 +15,7 @@ echo "<table border='1'>
 </tr>";
 while($row = mysqli_fetch_array($result))
 {
+
 echo "<tr>";
 echo "<td>" . $row['name'] . "</td>";
 echo "<td>" . $row['description'] . "</td>";
