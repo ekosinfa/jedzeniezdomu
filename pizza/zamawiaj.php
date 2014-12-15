@@ -42,5 +42,5 @@ DownloadAndDisplay("pizza");
 echo '<br><input type="text"  placeholder="wpisz tu swe imie i nazwisko" name="nazwisko">';
 echo '<input type="submit" value="ok">';
 echo "</form>";
-
+echo '<div align="right">made by M!CHU</div>'
 ?>
