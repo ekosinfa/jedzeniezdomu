@@ -22,7 +22,7 @@ if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL )==false){
   exit('adres e-mail nie jest prawidlowy');
 }
   
-echo password_hash('makarona');
+echo password_hash('makarona'.PASSWORD_DEFAULT);
 
 
 
