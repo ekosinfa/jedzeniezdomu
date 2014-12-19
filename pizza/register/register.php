@@ -16,7 +16,7 @@ if(empty($_POST['haslo2'])){
   exit('ERROR:Nie wpisales hasla');
 }
 if($_POST['haslo1']!=$_POST['haslo2']){
-  exit('ERROR:Nie wpisales username');
+  exit('ERROR:hasla nie sa identyczne');
 }
 
 
