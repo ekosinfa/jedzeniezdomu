@@ -11,7 +11,7 @@ $t2=$_POST['t2p1'] + $_POST['t2p2'] + $_POST['t2p3'] + $_POST['t2p4'] + $_POST['
 $t1=$t1 /5;
 $t2=$t2 /5;
 if($t1 > $t2){
-  echo $_POST['team1'].">".$_POST['team2']."<br>";
+  echo $_POST['team1']."(".$t1.")"." > ".$_POST['team2']."(".$t2.")"."<br>";
 }
 if($t1 < $t2){
   echo $_POST['team1']."<".$_POST['team2']."<br>";
