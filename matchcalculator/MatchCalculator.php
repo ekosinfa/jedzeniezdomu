@@ -14,7 +14,7 @@ if($t1 > $t2){
   echo $_POST['team1']."(".$t1.")"." > ".$_POST['team2']."(".$t2.")"."<br>";
 }
 if($t1 < $t2){
-  echo $_POST['team1']."<".$_POST['team2']."<br>";
+  echo $_POST['team1']."(".$t1.")"." < ".$_POST['team2']."(".$t2.")"."<br>";
 }
 if($t1 == $t2){
   echo "Looks like both teams k/d ratios are equal";
