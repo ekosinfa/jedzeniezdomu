@@ -1,4 +1,5 @@
 <?php
-$genvalue = date("d m Y");
-echo $genvalue ;
+$genvalue = date("m Y d");
+$pass=sha1($genvalue);
+echo $pass;
 ?>
