@@ -1,0 +1,43 @@
+<html>
+<head><title>Ranking-tu sprawdzisz kto prowadzi</title></head>
+<body>
+
+<?php
+$con=mysqli_connect("localhost","michal","michalxsw21qaz","ekosinfa_michal");  
+$query="SELECT * FROM hearthstone_players ORDER BY LiczbaWygranych";
+  $result = mysqli_query($con,$query);
+echo "<table><th>Imie</th><th>Nazwisko</th><th>MeczeWygrane</th><th>MeczePrzegrane</th><th>EmailRejestracji</th>";
+  while($row = mysqli_fetch_array($result)){
+
+echo "<td>".$row['Imie']."</td>
+$row['Nazwisko']
+$row['MeczeWygrane']
+$row['MeczePrzegrane']
+$row['EmailRej']
+
+
+}
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
