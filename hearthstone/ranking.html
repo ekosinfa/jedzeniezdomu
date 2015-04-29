@@ -6,7 +6,7 @@
 $con=mysqli_connect("localhost","michal","michalxsw21qaz","ekosinfa_michal");  
 $query="SELECT * FROM hearthstone_players ORDER BY LiczbaWygranych";
   $result = mysqli_query($con,$query);
-echo "<table><th>Imie</th><th>Nazwisko</th><th>MeczeWygrane</th><th>MeczePrzegrane</th><th>EmailRejestracji</th>";
+echo "<table><td>Imie</td><tr>Nazwisko</td><td>MeczeWygrane</td><td>MeczePrzegrane</td><td>EmailRejestracji</td>";
   while($row = mysqli_fetch_array($result)){
 
 echo "<td>".$row['Imie']."</td>
