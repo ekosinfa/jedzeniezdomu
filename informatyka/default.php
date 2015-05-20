@@ -22,7 +22,7 @@
 						
 						//creating message
 						echo "<br />";
-						echo "<h1>Smieszny obrazek nr ".$row['link']."<br />";
+						echo "<h4>Smieszny obrazek nr ".$row['id']."</h4><br />";
 						echo '<img src="'.$row['link'].'"<br />';
 							
 						}
