@@ -26,7 +26,7 @@
 						//creating message
 						echo "<br />";
 						echo "<h1>Smieszny obrazek nr ".$rank."<br />";
-						echo "<img src="'.$link.'" />;
+						echo '<img src="'.$link.'"<br />';
 							
 						}
 
