@@ -22,12 +22,14 @@
 						
 						//creating message
 						echo "<br />";
-						echo "<h4>Smieszny obrazek nr ".$row['id']."</h4><br />";
+						echo "<center><h4>Smieszny obrazek nr ".$row['id']."</h4><br />";
 						echo '<img src="'.$row['link'].'"<br />';
-							
+						echo '<h5><a href="'.$row['zrodlo'].'">zrodlo </h5></center>'
 						}
-
 ?>
+			test
+		</body>
+</html>
 			test
 		</body>
 </html>
