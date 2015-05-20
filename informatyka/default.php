@@ -19,15 +19,11 @@
 				$query="SELECT * FROM obrazki ORDER BY rank";
 				$result = mysqli_query($con,$query);
 				 while($row = mysqli_fetch_array($result)) {
-						//declaring variables
-						$row['id'] = $id;
-						$row['rank'] = $rank;
-						$row['link'] = $link;
-						$row['zrodlo'] = $source;
+						
 						//creating message
 						echo "<br />";
-						echo "<h1>Smieszny obrazek nr ".$rank."<br />";
-						echo '<img src="'.$link.'"<br />';
+						echo "<h1>Smieszny obrazek nr ".$row['link']."<br />";
+						echo '<img src="'.$row['link'].'"<br />';
 							
 						}
 
