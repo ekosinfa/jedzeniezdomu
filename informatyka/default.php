@@ -10,6 +10,10 @@
 	</head>
 		<body>
 			<?php
+				ini_set('display_errors',1);
+				ini_set('display_startup_errors',1);
+				error_reporting(-1);
+				
 				$con=mysqli_connect("localhost","michal","michalxsw21qaz","ekosinfa_michal");  
 				$query="SELECT * FROM obrazki ORDER BY rank";
 				$result = mysqli_query($con,$query);
@@ -21,8 +25,8 @@
 						$row['zrodlo'] = $source;
 						//creating message
 						echo "<br />";
-						echo "<h1>Smieszny obrazek nr ".$rank."<br />"
-						echo "<img src="'.$link.'" />
+						echo "<h1>Smieszny obrazek nr ".$rank."<br />";
+						echo "<img src="'.$link.'" />;
 							
 						}
 
