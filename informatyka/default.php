@@ -24,7 +24,7 @@
 						echo "<br />";
 						echo "<center><h4>Smieszny obrazek nr ".$row['id']."</h4><br />";
 						echo '<img src="'.$row['link'].'"<br />';
-						echo '<h5><a href="'.$row['zrodlo'].'">zrodlo </h5></center>'
+						echo '<h5><a href="'.$row['zrodlo'].'">zrodlo </h5></center>';
 						}
 ?>
 			test
