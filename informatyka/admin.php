@@ -7,8 +7,9 @@
 				$query="SELECT * FROM obrazki ORDER BY rank";
 				$result = mysqli_query($con,$query);
 if($_POST['password'] != "imbir"){
-	exit('Zle haslo , kliknij <a href="admin.html">tu</a> aby powrócić do panelu admina.')
+	exit('Zle haslo , kliknij <a href="admin.html">tu</a> aby powrócić do panelu admina.');
 	}
+echo "";
 
 
 
