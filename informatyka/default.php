@@ -9,8 +9,9 @@
 		<meta name="keywords" contect="Smieszne,Koty,obrazki,hahaha,slownik SJP"
 	</head>
 		<body>
+          <a href="admin.html">dodaj obrazek</a><br>
 			<?php
-				$id;$$rank;$link;$source;
+				
 				ini_set('display_errors',1);
 				ini_set('display_startup_errors',1);
 				error_reporting(-1);
@@ -18,8 +19,10 @@
 				$con=mysqli_connect("localhost","michal","michalxsw21qaz","ekosinfa_michal");  
 				$query="SELECT * FROM obrazki ORDER BY rank";
 				$result = mysqli_query($con,$query);
+$con=mysqli_connect("localhost","michal","michalxsw21qaz","ekosinfa_michal");  
+			
 				 while($row = mysqli_fetch_array($result)) {
-						
+				
 						//creating message
 						echo "<br />";
 						echo "<center><h4>Smieszny obrazek nr ".$row['id']."</h4><br />";
