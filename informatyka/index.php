@@ -1,12 +1,14 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+		<title>top 10 smiesznych obrazkow i wiecej</title>
 		<meta charset="utf-8" />
 		
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome = 1"
-		<title>Smieszne Obrazki -top 10 i wiecej</title>
+		
 		<meta name="description" content="Smieszne obrazki,koty"
 		<meta name="keywords" contect="Smieszne,Koty,obrazki,hahaha,slownik SJP"
+	
 	</head>
 		<body>
           <a href="admin.html">dodaj obrazek</a><br>
