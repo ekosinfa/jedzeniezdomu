@@ -19,7 +19,7 @@
 				error_reporting(-1);
 				
 				$con=mysqli_connect("localhost","michal","michalxsw21qaz","ekosinfa_michal");  
-				$query="SELECT * FROM obrazki ORDER BY rank";
+				$query="SELECT * FROM obrazki ORDER BY id";
 				$result = mysqli_query($con,$query);
 $con=mysqli_connect("localhost","michal","michalxsw21qaz","ekosinfa_michal");  
 			
