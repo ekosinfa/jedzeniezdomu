@@ -14,7 +14,7 @@
 			$query = "INSERT INTO obrazki (link,zrodlo) VALUES (".$_POST['link'].",".$_POST['zrodlo'].")";
 			$result = mysqli_query($con,$query);
 if(!result){exit("problem z baza danych mysql");}
-
+echo mysqli_error($result);
 
 
 
